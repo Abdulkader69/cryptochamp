@@ -1,20 +1,20 @@
-"use client";
-import Image from "next/image";
-import Arena from "../../../public/images/Arena.png";
-import Boutique from "../../../public/images/Boutique.png";
-import crypto_logo from "../../../public/images/Logo.png";
-import Staking_1 from "../../../public/images/Staking_1.png";
-import Minting from "../../../public/images/Minting.png";
-import rectangle9 from "../../../public/images/Rectangle 9.png";
-import energy4x from "../../../public/images/energy@4x 1.png";
-import Binance from "../../../public/images/binance-coin-bnb-logo 1.png";
-import Farme from "../../../public/images/Frame.png";
-import Farme_3 from "../../../public/images/Frame 3.png";
-import Farme_3_1 from "../../../public/images/Frame 3_1.png";
-import Gem from "../../../public/images/gem 1.png";
-import Heart from "../../../public/images/heart@4x 1.png";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+'use client';
+import Image from 'next/image';
+import Arena from '../../../public/images/Arena.png';
+import Boutique from '../../../public/images/Boutique.png';
+import crypto_logo from '../../../public/images/Logo.png';
+import Staking_1 from '../../../public/images/Staking_1.png';
+import Minting from '../../../public/images/Minting.png';
+import rectangle9 from '../../../public/images/Rectangle 9.png';
+import energy4x from '../../../public/images/energy@4x 1.png';
+import Binance from '../../../public/images/binance-coin-bnb-logo 1.png';
+import Farme from '../../../public/images/Frame.png';
+import Farme_3 from '../../../public/images/Frame 3.png';
+import Farme_3_1 from '../../../public/images/Frame 3_1.png';
+import Gem from '../../../public/images/gem 1.png';
+import Heart from '../../../public/images/heart@4x 1.png';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const pathname = usePathname();
@@ -24,7 +24,7 @@ const Header = () => {
         <div className=" flex items-center justify-between gap-x-8 2xl:gap-x-14">
           {/* logo */}
           <div className="flex-1 w-1/3">
-            <Link href={"/"}>
+            <Link href={'/'}>
               <Image
                 src={crypto_logo}
                 alt="crypto_logo"
@@ -37,9 +37,9 @@ const Header = () => {
           <div className=" flex-1 w-2/3 border-2 border-[#180902] bg-[#180902] text-white p-1 rounded-2xl ">
             <div className="bg-[#24150C] rounded-2xl flex m-auto justify-between items-start gap-x-2 xl:gap-x-6 2xl:gap-x-8 2xl:px-8 px-4 relative">
               <Link
-                href={"/arena"}
+                href={'/arena'}
                 className={`w-auto px-2 py-2 rounded-xl ${
-                  pathname === "/arena" ? "link-active-bg" : ""
+                  pathname === '/arena' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8">
@@ -54,9 +54,9 @@ const Header = () => {
                 </div>
               </Link>
               <Link
-                href={"/gem"}
+                href={'/gem'}
                 className={`w-auto px-2 py-2 rounded-xl ${
-                  pathname === "/gem" ? "link-active-bg" : ""
+                  pathname === '/gem' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8">
@@ -71,9 +71,9 @@ const Header = () => {
                 </div>
               </Link>
               <Link
-                href={"/stake"}
+                href={'/'}
                 className={`w-auto px-2 py-2 rounded-xl ${
-                  pathname === "/stake" ? "link-active-bg" : ""
+                  pathname === '/' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8">
@@ -88,9 +88,9 @@ const Header = () => {
                 </div>
               </Link>
               <Link
-                href={"/frame"}
+                href={'/minting'}
                 className={`w-auto px-2 py-2 rounded-xl ${
-                  pathname === "/frame" ? "link-active-bg" : ""
+                  pathname === '/minting' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8 pb-2">
@@ -157,7 +157,7 @@ const Header = () => {
         <div className=" fixed top-0 left-0 right-0 z-[9999]">
           <div className="flex justify-around items-center gap-x-4 shadow-top">
             <div className="my-4 sm:my-8">
-              <Link href={"/"}>
+              <Link href={'/'}>
                 <Image
                   src={crypto_logo}
                   alt="crypto_logo"
@@ -195,9 +195,9 @@ const Header = () => {
           <div className="border-2 border-[#180902] bg-[#180902] text-white p-1 rounded-2xl m-4 sm:m-8">
             <div className="bg-[#24150C] rounded-2xl flex justify-between items-start gap-x-4 px-2 sm:px-8 relative">
               <Link
-                href={"/arena"}
+                href={'/arena'}
                 className={`w-auto px-2 py-2 xl:px-6 xl:py-2 rounded-xl ${
-                  pathname === "/arena" ? "link-active-bg" : ""
+                  pathname === '/arena' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8">
@@ -212,9 +212,9 @@ const Header = () => {
                 </div>
               </Link>
               <Link
-                href={"/gem"}
+                href={'/gem'}
                 className={`w-auto px-2 py-2 xl:px-6 xl:py-2 rounded-xl ${
-                  pathname === "/gem" ? "link-active-bg" : ""
+                  pathname === '/gem' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8">
@@ -229,9 +229,9 @@ const Header = () => {
                 </div>
               </Link>
               <Link
-                href={"/stake"}
+                href={'/'}
                 className={`w-auto px-2 py-2 xl:px-6 xl:py-2 rounded-xl ${
-                  pathname === "/stake" ? "link-active-bg" : ""
+                  pathname === '/' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8">
@@ -246,9 +246,9 @@ const Header = () => {
                 </div>
               </Link>
               <Link
-                href={"/frame"}
+                href={'/minting'}
                 className={`w-auto px-2 py-2 xl:px-6 xl:py-2 rounded-xl ${
-                  pathname === "/frame" ? "link-active-bg" : ""
+                  pathname === '/minting' ? 'link-active-bg' : ''
                 }`}
               >
                 <div className="-mt-8 pb-2">

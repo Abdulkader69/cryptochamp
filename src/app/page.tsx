@@ -1,14 +1,14 @@
-'use client';
-import Image from 'next/image';
-import crypto_link from '../../public/images/Links.png';
-import crypto_rectangle from '../../public/images/Rectangle 18.png';
-import crypto_wallet_ballance from '../../public/images/wallet + balance.png';
-import crypto_energy from '../../public/images/Energy.png';
-import minus from '../../public/images/minus.png';
-import plus from '../../public/images/plus.png';
-import Header from './components/Header';
-import MyPopup from './components/popup';
-import { useState } from 'react';
+"use client";
+import Image from "next/image";
+import crypto_link from "../../public/images/Links.png";
+import crypto_rectangle from "../../public/images/Rectangle 18.png";
+import crypto_wallet_ballance from "../../public/images/wallet + balance.png";
+import crypto_energy from "../../public/images/Energy.png";
+import minus from "../../public/images/minus.png";
+import plus from "../../public/images/plus.png";
+import Header from "./components/Header";
+import MyPopup from "./components/popup";
+import { useState } from "react";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <div className="flex justify-center items-center text-white flex-col pb-40">
-        <h4 className=" text-3xl py-8 font-bold text-white">
+        <h4 className=" text-2xl md:text-3xl py-6 sm:py-8 font-bold text-white">
           Stake your CCG tokens
         </h4>
         <div className="flex flex-wrap flex-col md:flex-row justify-center items-center gap-x-8 gap-y-8">

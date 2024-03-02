@@ -4,6 +4,8 @@ import crypto_link from "../../public/images/Links.png";
 import crypto_rectangle from "../../public/images/Rectangle 18.png";
 import crypto_wallet_ballance from "../../public/images/wallet + balance.png";
 import crypto_energy from "../../public/images/Energy.png";
+import Earning_Gem from "../../public/images/gem_1.png";
+import Earning_Mushroom from "../../public/images/mushroom_1.png";
 import minus from "../../public/images/minus.png";
 import plus from "../../public/images/plus.png";
 import Header from "./components/Header";
@@ -35,7 +37,7 @@ export default function Home() {
               <div className="flex flex-col gap-y-4">
                 <div className="group lg:w-[306px] w-[238px] lg:h-[54px] h-[40px] flex justify-between items-center px-4">
                   <span className=" text-[#D79D7B] text-sm">APY</span>
-                  <span className=" text-white text-xl font-bold">64.87%</span>
+                  <span className=" text-white text-xl font-bold">36.5%</span>
                 </div>
                 <div className="group1  lg:w-[306px] w-[238px] lg:h-[54px] h-[40px] object-cover flex justify-between items-center px-4">
                   <span className=" text-[#D79D7B] text-sm">Liquidity</span>
@@ -44,16 +46,22 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="group2  lg:w-[306px] w-[238px] lg:h-[54px] h-[40px] object-cover flex justify-between items-center px-4">
-                  <span className=" text-[#D79D7B] text-sm">
-                    Earnings (24h)
-                  </span>
-                  <span className=" text-white text-xl font-bold">
-                    $ 172.12
-                  </span>
+                  <span className=" text-[#D79D7B] text-sm">Earnings</span>
+                  <div className="flex items-center justify-between">
+                    <Image
+                      src={Earning_Gem}
+                      alt="Earning_Gem"
+                      className=" w-8 lg:w-9 h-auto object-cover pb-1"
+                    />
+
+                    <span className=" text-white text-xl font-bold">
+                      $ 172.12
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className=" absolute bottom-10 right-16 lg:right-28  text-center">
+            {/* <div className=" absolute bottom-10 right-16 lg:right-28  text-center">
               <span className="text-[#A7ACB6] text-xs">My Liquidity</span>
               <div className="flex flex-row justify-center items-center gap-x-4">
                 <Image
@@ -70,17 +78,40 @@ export default function Home() {
                   onClick={openPopup}
                 />
               </div>
+            </div> */}
+            <div className="absolute bottom-4 lg:bottom-5 right-9 lg:right-[76px]">
+              <div className="flex flex-col justify-center items-center gap-y-3">
+                <div className="flex justify-center items-center gap-x-8">
+                  <button
+                    onClick={openPopup}
+                    className="bg-[#194D1A] py-2 px-5 rounded-[50%] font-bold text-sm inline-block uppercase"
+                  >
+                    stake
+                  </button>
+                  <button
+                    onClick={openPopup}
+                    className="bg-[#760F0D] py-2 px-5 rounded-[50%] font-bold text-sm uppercase inline-block"
+                  >
+                    Unstake
+                  </button>
+                </div>
+                <button className="bg-[#7E543B] px-12 py-1 rounded-lg">
+                  <span className="text-lg font-bold text-[#FFD914]">
+                    Claim reward
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
           <div className="lg:flex-1 lg:w-[380px] w-[300px] lg:h-[506px] h-[405px] token2 relative">
-            <div className=" absolute   top-24 lg:top-32  left-32 lg:left-40">
-              <span className="text-white text-xl font-bold">ETH</span>
+            <div className=" absolute  top-24 lg:top-32  left-24 lg:left-32">
+              <span className="text-white text-xl font-bold">$CCM/ETH</span>
             </div>
             <div className="absolute  top-36 lg:top-48  left-8">
               <div className="flex flex-col gap-y-4">
                 <div className="group lg:w-[306px] w-[238px] lg:h-[54px] h-[40px] flex justify-between items-center px-4">
                   <span className=" text-[#D79D7B] text-sm">APY</span>
-                  <span className=" text-white text-xl font-bold">64.87%</span>
+                  <span className=" text-white text-xl font-bold">50%</span>
                 </div>
                 <div className="group1 lg:w-[306px] w-[238px] lg:h-[54px] h-[40px] flex justify-between items-center px-4">
                   <span className=" text-[#D79D7B] text-sm">Liquidity</span>
@@ -89,31 +120,42 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="group2 lg:w-[306px] w-[238px] lg:h-[54px] h-[40px] flex justify-between items-center px-4">
-                  <span className=" text-[#D79D7B] text-sm">
-                    Earnings (24h)
-                  </span>
-                  <span className=" text-white text-xl font-bold">
-                    $ 172.12
-                  </span>
+                  <span className=" text-[#D79D7B] text-sm">Earnings</span>
+                  <div className="flex items-center justify-between">
+                    <Image
+                      src={Earning_Mushroom}
+                      alt="Earning_Mushroom"
+                      className=" w-7 lg:w-8 h-auto object-cover pb-1"
+                    />
+
+                    <span className=" text-white text-xl font-bold">
+                      $ 172.12
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className=" absolute bottom-10 right-16 lg:right-28  text-center">
-              <span className="text-[#A7ACB6] text-xs">My Liquidity</span>
-              <div className="flex flex-row justify-center items-center gap-x-4">
-                <Image
-                  src={minus}
-                  alt="minus"
-                  className="w-[32px] lg:w-full"
-                  onClick={openPopup}
-                />
-                <span className="text-xl font-bold">0.00</span>
-                <Image
-                  src={plus}
-                  alt="plus"
-                  className="w-[32px] lg:w-full"
-                  onClick={openPopup}
-                />
+            <div className="absolute bottom-4 lg:bottom-5 right-9 lg:right-[76px]">
+              <div className="flex flex-col justify-center items-center gap-y-3">
+                <div className="flex justify-center items-center gap-x-8">
+                  <button
+                    onClick={openPopup}
+                    className="bg-[#194D1A] py-2 px-5 rounded-[50%] font-bold text-sm inline-block uppercase"
+                  >
+                    stake
+                  </button>
+                  <button
+                    onClick={openPopup}
+                    className="bg-[#760F0D] py-2 px-5 rounded-[50%] font-bold text-sm uppercase inline-block"
+                  >
+                    Unstake
+                  </button>
+                </div>
+                <button className="bg-[#7E543B] px-12 py-1 rounded-lg">
+                  <span className="text-lg font-bold text-[#FFD914]">
+                    Claim reward
+                  </span>
+                </button>
               </div>
             </div>
           </div>

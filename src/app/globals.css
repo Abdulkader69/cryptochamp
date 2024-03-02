@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .section-container {
-  background-image: url("../../public//images/crypto-bg-min.jpg");
+  /* background-image: url("../../public//images/crypto-bg-min.jpg"); */
+  background-image: url("../../public//images/crypto-bg-mushroom.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +23,7 @@
   background-size: cover;
 }
 .token2 {
-  background-image: url("../../public/images/pool\ 2.png");
+  background-image: url("../../public/images/pool\ 2.2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

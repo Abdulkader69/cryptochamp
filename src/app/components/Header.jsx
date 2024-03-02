@@ -12,6 +12,8 @@ import Farme from "../../../public/images/Frame.png";
 import Farme_3 from "../../../public/images/Frame 3.png";
 import Farme_3_1 from "../../../public/images/Frame 3_1.png";
 import Gem from "../../../public/images/gem 1.png";
+import Gem1 from "../../../public/images/gem_1.png";
+import Mushroom1 from "../../../public/images/mushroom_1.png";
 import Heart from "../../../public/images/heart@4x 1.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -109,7 +111,7 @@ const Header = () => {
           {/* end of Menu Items */}
         </div>
         <div className="flex items-center justify-between gap-x-12">
-          <div>
+          {/* <div>
             <div className="bg-[#5A2713] rounded-xl w-32 2xl:w-60 2xl:h-8 h-5 relative flex flex-row justify-center items-center">
               <Image
                 src={energy4x}
@@ -123,12 +125,24 @@ const Header = () => {
                 8/10
               </span>
             </div>
-          </div>
+          </div> */}
           <div className="flex flex-row justify-center items-center gap-x-8">
             <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
               <div className="bg-[#24150C] w-[100px] h-[30px] 2xl:w-[120px] 2xl:h-[40px] rounded-2xl relative flex justify-center items-center">
                 <Image
-                  src={Binance}
+                  src={Mushroom1}
+                  alt="Binance"
+                  className=" absolute -left-6 2xl:w-12 w-10"
+                />
+                <span className=" absolute top-1 2xl:top-2 left-8 2xk:left-12 font-bold text-white text-base">
+                  16453
+                </span>
+              </div>
+            </div>
+            <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
+              <div className="bg-[#24150C] w-[100px] h-[30px] 2xl:w-[120px] 2xl:h-[40px] rounded-2xl relative flex justify-center items-center">
+                <Image
+                  src={Gem1}
                   alt="Binance"
                   className=" absolute -left-6 2xl:w-12 w-10"
                 />
@@ -206,7 +220,7 @@ const Header = () => {
               <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
                 <div className="bg-[#24150C] w-[90px] sm:w-[120px] h-[30px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
                   <Image
-                    src={Binance}
+                    src={Mushroom1}
                     alt="Binance"
                     className=" absolute -left-4 sm:-left-6 w-8 sm:w-12"
                   />
@@ -216,6 +230,18 @@ const Header = () => {
                 </div>
               </div>
               <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
+                <div className="bg-[#24150C] w-[90px] sm:w-[120px] h-[30px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
+                  <Image
+                    src={Gem1}
+                    alt="Binance"
+                    className=" absolute -left-4 sm:-left-6 w-8 sm:w-12"
+                  />
+                  <span className=" absolute top-2 left-8 sm:left-12 font-bold text-white text-xs sm:text-base">
+                    16453
+                  </span>
+                </div>
+              </div>
+              {/* <div className="border-4 border-[#180902] bg-[#180902] text-white rounded-2xl">
                 <div className="bg-[#24150C] w-[90px] h-[30px] sm:w-[100px] sm:h-[40px] rounded-2xl relative flex justify-center items-center">
                   <Image
                     src={Farme}
@@ -226,7 +252,7 @@ const Header = () => {
                     0x...E8
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

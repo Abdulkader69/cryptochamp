@@ -1,8 +1,8 @@
 // RangeSlider.js
 
-import { useRef, useState } from "react";
-import Image from "next/image";
-import CCG from "../../../public/images/logo CCG no bg 3.png"; // Import your CCG image
+import { useRef, useState } from 'react';
+import Image from 'next/image';
+import CCG from '../../../public/images/logo CCG no bg 3.png'; // Import your CCG image
 
 const RangeSlider = () => {
   const [value, setValue] = useState(50); // Initial value
@@ -10,6 +10,10 @@ const RangeSlider = () => {
   const customThumbStyle = {
     left: `calc(${value}% - 7px)`,
   };
+
+  function clickHandler(e: any) {
+    setValue(e.target.value);
+  }
 
   return (
     <div className="bg-[#813616] border-[#351909] w-72 h-2 rounded-lg border-1 relative">
@@ -28,7 +32,7 @@ const RangeSlider = () => {
         max="100"
         step="1"
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={clickHandler}
         className="w-full h-2 absolute top-0 left-0 opacity-0 cursor-pointer"
         style={{ zIndex: 2 }} // Ensure the range input is on top for styling
       />
